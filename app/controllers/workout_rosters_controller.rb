@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 class WorkoutRostersController < ApplicationController
   
   def new
@@ -6,7 +6,7 @@ class WorkoutRostersController < ApplicationController
   end
 
   def create
-    binding.pry
+    # binding.pry
     @workout_roster = WorkoutRoster.create(workout_time_id: params[:time], student_id: current_user.id)
     redirect_to classes_path
   end
