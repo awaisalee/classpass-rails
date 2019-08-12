@@ -1,0 +1,9 @@
+<h1> Welcome <%=@user.first_name%>!</h1>
+<h2> Here are your upcoming classes: </h2>
+<ul>
+  <%@user.workout_times.each do |time| %>
+    <em>Class: <%= time.workout.name %></em>
+    <li>Date: <%= time.start_time.to_date %></li>
+    <li>Time: <%= time.start_time.strftime("%H:%M") %></li>
+  <%end%>
+</ul>

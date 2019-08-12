@@ -2,9 +2,18 @@
   "name": "classpass-rails",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^4.0.7"
+    "@rails/webpacker": "^3.0.2",
+    "coffeescript": "1.12.7"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.8.0"
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.8.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "webpack-dev-server": "^2.9.4"
   }
 }

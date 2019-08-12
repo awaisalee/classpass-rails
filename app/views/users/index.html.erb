@@ -1,0 +1,11 @@
+<h1>Welcome to Classpass</h1>
+
+<% if logged_in? %>
+  <h1>Hi <%= current_user.first_name %> </h1>
+  <%= link_to "Available Classes", classes_path %>
+  <!-- Why doesn't this log out method work? -->
+  <%-# link_to "Log out", session_path, method: :delete -%>
+<% else %>
+  <%= link_to "Register", new_user_path %>
+  <%= link_to "Log In", new_session_path %>
+<% end %>

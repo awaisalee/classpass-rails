@@ -1,0 +1,9 @@
+<h2> Here are available classes: </h2>
+<ul>
+  <%@available_workouts.each do |time| %>
+    <em>Class: <%= time.workout.name %></em>
+    <li>Date: <%= time.start_time.to_date %></li>
+    <li>Time: <%= time.start_time.strftime("%H:%M") %></li>
+    <li><%=link_to 'Sign up!', new_workout_roster_path %></li>
+  <%end%>
+</ul>
